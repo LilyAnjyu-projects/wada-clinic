@@ -170,7 +170,6 @@ h1 {
     display: block;   /* スマホでは改行 */
   }
   .hero p {
-    max-width: 200px; 
     font-size: 16px;  /* フォントを小さく */
     padding: 0 10px;  /* 左右に余白を追加して改行位置を調整 */
   }
@@ -181,6 +180,17 @@ h1 {
   }
   .hero.other {
     height: 250px;
+  }
+}
+/* PCでは改行を消す（表示しない） */
+.sp-br br {
+  display: none;
+}
+
+/* スマホ（幅600px以下）だけ改行を表示 */
+@media (max-width: 600px) {
+  .sp-br br {
+    display: inline;
   }
 }
 
