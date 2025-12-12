@@ -152,11 +152,37 @@ h1 {
   margin-bottom: 12px;
   color: #00796b; /* 落ち着いた緑系 */
 }
-
+.hero h1 span {
+  display: inline-block; /* PCでは横並び */
+}
 .hero p {
   font-size: 18px;
+   line-height: 1.5;
+  margin: 8px 0;
   color: #004d40;
 }
+/* ===== スマホ画面向け ===== */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 22px;  /* フォントを少し小さく */
+  }
+  .hero h1 span {
+    display: block;   /* スマホでは改行 */
+  }
+  .hero p {
+    font-size: 16px;  /* フォントを小さく */
+    padding: 0 10px;  /* 左右に余白を追加して改行位置を調整 */
+  }
+
+  /* 高さもスマホ向けに調整 */
+  .hero.index {
+    height: 400px;
+  }
+  .hero.other {
+    height: 250px;
+  }
+}
+
 
 /* ===== セクション共通 ===== */
 .section {
