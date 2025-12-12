@@ -124,6 +124,16 @@ h1 {
   color: #00796b;
 }
 
+/* ===== トップページ ===== */
+.intro {
+  max-width: 900px;
+  margin: 0 auto 40px auto; /* 上0, 下40px */
+  padding: 0 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+}
+
 /* ===== 医師紹介 ===== */
 .doctor-profile {
   display: flex;
