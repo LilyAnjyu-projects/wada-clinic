@@ -33,7 +33,7 @@ body {
   color: inherit; /* 色を変えずに表示 */
 }
 .logo {
-  height: 32px;
+  height: 40px; 
 }
 
 .header-left .clinic-name {
