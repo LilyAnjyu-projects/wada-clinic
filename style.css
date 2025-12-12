@@ -33,7 +33,17 @@ body {
   color: inherit; /* 色を変えずに表示 */
 }
 .logo {
-  height: 40px; 
+  height: 40px;       /* 必要に応じてサイズ調整 */
+  display: inline-block;
+  vertical-align: middle; /* 文字と同じ高さに揃える */
+  position: relative;
+  top: 15px;           /* ロゴだけ下にずらす */
+}
+@media (max-width: 768px) {
+  .logo {
+    height: 32px;
+    top: 2px; /* スマホでは少しだけ下げる */
+  }
 }
 
 .header-left .clinic-name {
