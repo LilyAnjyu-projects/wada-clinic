@@ -226,7 +226,15 @@ h1 {
   line-height: 1.6;
   color: #555;
 }
+dl dt {
+  font-weight: bold;
+  margin-top: 16px;
+}
 
+dl dd {
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
 /* ===== アクセス ===== */
 .address {
   margin-bottom: 12px;
