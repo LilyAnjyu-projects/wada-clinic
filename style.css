@@ -1,0 +1,116 @@
+/* 全体基本設定 */
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+  line-height: 1.8;
+  color: #333;
+  background: #fff;
+}
+
+/* ヘッダー */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.header nav a:hover {
+  opacity: 0.6;
+}
+
+/* アイキャッチ（ヒーロー） */
+.hero {
+  background: #e0f3ff; /* 後で画像に置き換え可能 */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* セクション共通 */
+.section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-left: 6px solid #4AA3DF; /* 医療系で優しい青 */
+  padding-left: 10px;
+}
+
+/* 診察時間の表 */
+.time-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.time-table th, .time-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.time-table th {
+  background: #f0f8ff;
+}
+
+/* アクセスマップなどの iframe */
+iframe {
+  border-radius: 10px;
+}
+
+/* スマホ設定 */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
