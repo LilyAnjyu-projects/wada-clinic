@@ -170,3 +170,29 @@ iframe {
     font-size: 16px;
   }
 }
+
+/* フッター */
+.footer {
+  background-color: #f9f9f9; /* 薄めの背景 */
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  height: 24px; /* 好みで調整 */
+}
+
+.footer-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
