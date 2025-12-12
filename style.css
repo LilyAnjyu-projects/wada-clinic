@@ -24,9 +24,8 @@ body {
   gap: 12px; /* ロゴと名前の間隔 */
 }
 
-.logo {
-  height: 48px;     /* サイズは好みで調整 */
-}
+.logo { height: 32px; }
+
 
 /* メニュー（右側） */
 .header-nav ul {
