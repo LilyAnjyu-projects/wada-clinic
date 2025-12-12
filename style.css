@@ -195,6 +195,20 @@ iframe {
   font-weight: 500;
   color: #333;
 }
+/* フッターリンク */
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit; /* 文字色はそのまま */
+}
+
+.footer-link:hover {
+  opacity: 0.8; /* ホバー時の視覚効果 */
+}
+
 /* 医師紹介 */
 .doctor-profile {
   display: flex;
