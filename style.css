@@ -27,6 +27,17 @@ body {
 
 .logo { height: 32px; }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* 文字色をそのままにする */
+}
+
+.logo-link:hover {
+  opacity: 0.8; /* クリック時の視覚効果 */
+}
+
 
 /* メニュー（右側） */
 .header-nav ul {
