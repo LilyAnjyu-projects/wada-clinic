@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>和田クリニック</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ヘッダーメニュー -->
-<header class="header">
-  <div class="header-left">
-    <a href="index.html" class="logo-link">
-      <img src="logo.png" alt="和田クリニックロゴ" class="logo">
-      <span class="clinic-name">和田クリニック</span>
-    </a>
-  </div>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header-left">
+      <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="和田クリニックロゴ" class="logo">
+        <span class="clinic-name">和田クリニック</span>
+      </a>
+    </div>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="first.html">初診の方へ</a></li>
+        <li><a href="about.html">当院の紹介</a></li>
+        <li><a href="doctor.html">医師紹介</a></li>
+        <li><a href="#time">診察時間</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
+        <li><a href="#access">アクセス</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <nav class="header-nav">
-    <ul>
-      <!-- 独立ページに変更 -->
-   <li><a href="first.html">初診の方へ</a></li>
-<li><a href="about.html">当院の紹介</a></li>
-<li><a href="doctor.html">医師紹介</a></li>
-<li><a href="#time">診察時間</a></li>
-<li><a href="faq.html">よくある質問</a></li>
-<li><a href="#access">アクセス</a></li>
-
-    </ul>
-  </nav>
-</header>
-
-
-  <!-- アイキャッチ部分 -->
+  <!-- アイキャッチ -->
   <section class="hero">
-    <h1>ちょっとした心配も、気軽に相談できる場所。</h1>
-    <p>あなたの“かかりつけ”でありたい。</p>
+    <h1>あなたの“かかりつけ”でありたい</h1>
+    <p>ちょっとした心配も、気軽に相談できる場所</p>
   </section>
 
+  <!-- 初診の方へセクション（簡略版） -->
+  <section id="first" class="section">
+    <h2>初めての方へ</h2>
+    <p>初診の方は <a href="first.html">こちら</a> をご覧ください。</p>
+  </section>
+
+  <!-- 医師紹介（トップ簡略版） -->
+  <section id="doctor" class="section">
+    <h2>医師紹介</h2>
+    <p>院長は地域の皆さまに寄り添う、親しみやすい医師です。</p>
+  </section>
 
   <!-- 診察時間 -->
   <section id="time" class="section">
     <h2>診察時間</h2>
-
-    <!-- ここは後であなたの診察時間に書き換える -->
-   <table class="time-table">
+    <table>
       <tr><th>曜日</th><th>午前</th><th>午後</th></tr>
-      <tr><td>月</td><td>9:00〜12:30</td><td>15:00〜18:00</td></tr>
-      <tr><td>火</td><td>9:00〜12:30</td><td>15:00〜18:00</td></tr>
-       <tr><td>水</td><td>9:00〜12:30</td><td>15:00〜18:00</td></tr>
-      <tr><td>木</td><td colspan="2">休診</td></tr>
-      <tr><td>金</td><td>9:00〜12:30</td><td>15:00〜18:00</td></tr>
-      <tr><td>土</td><td>9:00〜12:30</td><td>休診</td></tr>
-      <tr><td>日・祝</td><td colspan="2">休診</td></tr>
+      <tr><td>月</td><td>9:00-12:00</td><td>14:00-18:00</td></tr>
+      <tr><td>火</td><td>9:00-12:00</td><td>14:00-18:00</td></tr>
+      <!-- 他曜日も追加 -->
     </table>
   </section>
 
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>よくある質問</h2>
+    <p>詳しくは <a href="faq.html">FAQページ</a> をご覧ください。</p>
+  </section>
 
-  <!-- Googleカレンダー（あとであなたのIDに差し替え） -->
-  <section id="calendar" class="section">
-    <h2>お知らせ（予定）</h2>
-    <iframe src="https://calendar.google.com/calendar/embed?src=あなたのGoogleカレンダーID&ctz=Asia/Tokyo"
-            style="border: 0" width="100%" height="400" frameborder="0" scrolling="no">
+  <!-- アクセス -->
+  <section id="access" class="section">
+    <h2>アクセス</h2>
+    <p class="address">〒174-0071 東京都板橋区常盤台1-40-12</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.7813511885587!2d139.69322231525816!3d35.76298098020014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601892d4bfe8b165%3A0x818f9f2fc297266a!2z5p2x5Lqs6YO95p2_5qmL5Yy65bi455uk5Y-w77yR5LiB55uu77yU!5e0!3m2!1sja!2sjp!4v1765523456789!5m2!1sja!2sjp" 
+      width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </section>
 
-
-  <!-- Googleマップ（あとで差し替え） -->
-  <section id="access" class="section">
-    <h2>アクセス</h2>
-  <p class="address">〒174-0071 東京都板橋区常盤台1-40-12</p>
-
-  <!-- Google マップ埋め込み -->
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.7813511885587!2d139.69322231525816!3d35.76298098020014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601892d4bfe8b165%3A0x818f9f2fc297266a!2z5p2x5Lqs6YO95p2_5qmL5Yy65bi455uk5Y-w77yR5LiB55uu77yU!5e0!3m2!1sja!2sjp!4v1765523456789!5m2!1sja!2sjp" 
-    width="100%" 
-    height="500" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-  </section>
-  
-<footer class="footer">
-  <div class="footer-content">
-    <a href="index.html" class="footer-link">
-      <img src="logo.png" alt="和田クリニックロゴ" class="footer-logo">
-      <span class="footer-name">和田クリニック</span>
-    </a>
-  </div>
-</footer>
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="footer-content">
+      <a href="index.html" class="footer-link">
+        <img src="logo.png" alt="和田クリニックロゴ" class="footer-logo">
+        <span class="footer-name">和田クリニック</span>
+      </a>
+    </div>
+  </footer>
 
 </body>
 </html>
