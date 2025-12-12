@@ -11,6 +11,15 @@ body {
   color: #333;
   background-color: #fff;
 }
+.top-bar {
+  background-color: #00796b;  /* 落ち着いた緑 */
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
 
 /* ===== ヘッダー ===== */
 .header {
