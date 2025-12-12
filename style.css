@@ -124,11 +124,18 @@ h1 {
   background-repeat: no-repeat;
   text-align: center;
   padding: 60px 20px;
-  height: 500px; /* 固定の高さにする */
   display: flex;
   flex-direction: column;
   justify-content: center; /* 縦中央にテキスト配置 */
   color: #fff;
+}
+.hero.index {
+  height: 500px;  /* 今の高さ */
+}
+
+/* その他ページのアイキャッチ */
+.hero.other {
+  height: 300px;  /* 小さめに調整 */
 }
 
 .hero h1 {
