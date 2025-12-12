@@ -12,17 +12,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 30px;
-  background: #f8f9fa;
-  border-bottom: 1px solid #ddd;
+  padding: 16px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
 }
 
-.header .logo {
-  font-size: 20px;
-  font-weight: bold;
+/* ロゴ + クリニック名（左側） */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* ロゴと名前の間隔 */
 }
 
-.header nav ul {
+.logo {
+  height: 48px;     /* サイズは好みで調整 */
+}
+
+/* メニュー（右側） */
+.header-nav ul {
   display: flex;
   gap: 20px;
   list-style: none;
@@ -30,15 +37,24 @@ body {
   padding: 0;
 }
 
-.header nav a {
+.header-nav a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
 }
 
-.header nav a:hover {
-  opacity: 0.6;
+.header-nav a:hover {
+  opacity: 0.7;
 }
+
+/* スマホ画面向け：縦並びに切り替え（任意） */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
 
 /* アイキャッチ（ヒーロー） */
 .hero {
