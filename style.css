@@ -17,6 +17,7 @@ body {
   border-bottom: 1px solid #eee;
 }
 
+
 /* ロゴ + クリニック名（左側） */
 .header-left {
   display: flex;
