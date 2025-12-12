@@ -42,9 +42,32 @@ body {
 
 /* アイキャッチ（ヒーロー） */
 .hero {
-  background: #e0f3ff; /* 後で画像に置き換え可能 */
-  padding: 80px 20px;
+  position: relative;
+  background-image: url("image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 20px;
   text-align: center;
+  color: #fff;
+}
+
+/* 黒幕（文字を読みやすくする） */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  z-index: 0;
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
