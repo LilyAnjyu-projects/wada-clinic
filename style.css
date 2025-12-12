@@ -37,7 +37,7 @@ body {
   display: inline-block;
   vertical-align: middle; /* 文字と同じ高さに揃える */
   position: relative;
-  top: 0px;           /* ロゴだけ下にずらす */
+  top: -5px;           /* ロゴだけ下にずらす */
 }
 @media (max-width: 768px) {
   .logo {
