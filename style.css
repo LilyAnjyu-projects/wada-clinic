@@ -32,7 +32,11 @@ body {
 .logo {
   height: 32px;
 }
-
+h1 {
+  font-family: "Hiragino Kaku Gothic Pro","メイリオ",sans-serif;
+  text-decoration: none; /* 下線を消す */
+  color: #00796b;
+}
 .header-nav ul {
   display: flex;
   gap: 20px;
