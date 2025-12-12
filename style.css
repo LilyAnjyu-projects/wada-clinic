@@ -86,14 +86,18 @@ h1 {
 
 /* ===== アイキャッチ ===== */
 .hero {
-  background-color: #e0f7fa; /* 優しい水色（画像読み込み前の色） */
-  background-image: url("image.png"); /* アイキャッチ画像 */
-  background-size: cover;      /* 画面サイズに合わせて拡大縮小 */
-  background-position: center; /* 中央に配置 */
-  background-repeat: no-repeat;/* 繰り返さない */
+  background-color: #e0f7fa;
+  background-image: url("image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 60px 20px;
-  color: #fff; /* 文字を白にすると画像の上でも見やすい */
+  height: 500px; /* 固定の高さにする */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 縦中央にテキスト配置 */
+  color: #fff;
 }
 
 .hero h1 {
