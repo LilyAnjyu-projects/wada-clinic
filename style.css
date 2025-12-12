@@ -1,13 +1,18 @@
-/* 全体基本設定 */
-body {
+/* ===== 全体リセット・基本設定 ===== */
+* {
   margin: 0;
-  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-  line-height: 1.8;
-  color: #333;
-  background: #fff;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* ヘッダー */
+body {
+  font-family: "Hiragino Kaku Gothic Pro","メイリオ",sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+/* ===== ヘッダー ===== */
 .header {
   display: flex;
   justify-content: space-between;
@@ -15,37 +20,23 @@ body {
   padding: 16px 24px;
   background: #ffffff;
   border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
 }
 
-
-/* ロゴ + クリニック名（左側） */
 .header-left {
   display: flex;
   align-items: center;
-  gap: 12px; /* ロゴと名前の間隔 */
+  gap: 12px;
 }
 
-.logo { height: 32px; }
-
-.logo-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: inherit; /* 文字色をそのままにする */
+.logo {
+  height: 32px;
 }
 
-.logo-link:hover {
-  opacity: 0.8; /* クリック時の視覚効果 */
-}
-
-
-/* メニュー（右側） */
 .header-nav ul {
   display: flex;
   gap: 20px;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .header-nav a {
@@ -58,124 +49,10 @@ body {
   opacity: 0.7;
 }
 
-/* スマホ画面向け：縦並びに切り替え（任意） */
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-    gap: 12px;
-  }
-}
-
-
-/* アイキャッチ（ヒーロー） */
-.hero {
-  position: relative;
-  background-image: url("image.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 120px 20px;
-  text-align: center;
-  color: #fff;
-}
-
-/* 黒幕（文字を読みやすくする） */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.35);
-  z-index: 0;
-}
-
-.hero h1,
-.hero p {
-  position: relative;
-  z-index: 1;
-}
-
-.hero h1 {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 18px;
-  color: #555;
-}
-
-/* セクション共通 */
-.section {
-  padding: 50px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.section h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  border-left: 6px solid #4AA3DF; /* 医療系で優しい青 */
-  padding-left: 10px;
-}
-
-/* 診察時間の表 */
-.time-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-.time-table th, .time-table td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-}
-
-.time-table th {
-  background: #f0f8ff;
-}
-
-.address {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 16px;
-  color: #333;
-}
-/* アクセスマップなどの iframe */
-iframe {
-  border-radius: 10px;
-}
-
-/* スマホ設定 */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .header nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .hero h1 {
-    font-size: 22px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-}
-
-/* フッター */
+/* ===== フッター ===== */
 .footer {
-  background-color: #f9f9f9; /* 薄めの背景 */
-  padding: 20px 0;
-  text-align: center;
+  background: #f9f9f9;
+  padding: 16px 0;
   border-top: 1px solid #eee;
 }
 
@@ -187,36 +64,59 @@ iframe {
 }
 
 .footer-logo {
-  height: 24px; /* 好みで調整 */
+  height: 28px;
 }
 
-.footer-name {
-  font-size: 16px;
-  font-weight: 500;
-  color: #333;
-}
-/* フッターリンク */
 .footer-link {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: inherit; /* 文字色はそのまま */
+  color: inherit;
 }
 
 .footer-link:hover {
-  opacity: 0.8; /* ホバー時の視覚効果 */
+  opacity: 0.8;
 }
 
-/* 医師紹介 */
+/* ===== アイキャッチ ===== */
+.hero {
+  background-color: #e0f7fa; /* 優しい水色 */
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #00796b; /* 落ち着いた緑系 */
+}
+
+.hero p {
+  font-size: 18px;
+  color: #004d40;
+}
+
+/* ===== セクション共通 ===== */
+.section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #00796b;
+}
+
+/* ===== 医師紹介 ===== */
 .doctor-profile {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .doctor-img {
@@ -227,30 +127,17 @@ iframe {
 }
 
 .doctor-info h3 {
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
   font-size: 20px;
-  color: #333;
 }
 
 .doctor-info p {
-  margin: 0;
   font-size: 16px;
-  line-height: 1.6;
   color: #555;
 }
 
-/* スマホ対応 */
-@media (max-width: 600px) {
-  .doctor-profile {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-/* FAQリスト */
+/* ===== FAQ ===== */
 .faq-list {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0;
   list-style: none;
 }
 
@@ -262,13 +149,53 @@ iframe {
   display: block;
   font-size: 17px;
   margin-bottom: 6px;
-  color: #333;
 }
 
 .faq-list p {
-  margin: 0;
   font-size: 16px;
   line-height: 1.6;
   color: #555;
 }
 
+/* ===== アクセス ===== */
+.address {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* ===== テーブル（診察時間） ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+/* ===== レスポンシブ ===== */
+@media (max-width: 768px) {
+  .header-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .doctor-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+}
