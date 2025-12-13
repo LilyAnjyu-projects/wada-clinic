@@ -51,7 +51,7 @@ body {
 @media (max-width: 768px) {
   .logo {
     height: 32px;
-    top: 2px; /* スマホでは少しだけ下げる */
+    top: -4px; /* スマホでは少しだけ下げる */
   }
 }
 
