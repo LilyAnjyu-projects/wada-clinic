@@ -106,10 +106,15 @@ h1 {
   align-items: center;
   gap: 10px;
 }
+.footer-info {
+  text-align: center;   /* ← 左右中央 */
+}
+
 .footer-info p {
   margin: 0;
   font-size: 14px;
   color: #555;
+  line-height: 1.6;
 }
 
 .footer-logo {
